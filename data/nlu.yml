@@ -1,0 +1,338 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: ask_how_are_you
+  examples: | 
+    - How are you?
+    - How about you?
+    - How are you doing today? 
+    - What about you?
+    - How's it going?
+    - How ya doin'?
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure thing
+    - absolutely
+    - that works
+    - sounds good
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    -very good
+    -good
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - bad
+    - so bad 
+
+- intent: bot_who_are_you
+  examples: |
+    - who are you?
+    - who am I talking to?
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: who_am_I
+  examples: |
+    - I am [Tolga] (name)
+    - My name is [Victor](name)
+    - This is [Emre](name)
+    - You are talking to [Merve](name)
+    - [Aylin](name)
+    
+
+- intent: nice_to_meet_you
+  examples: |
+    - It is nice to meet you
+    - nice to meet you
+    - I am honoured to meet you
+    - pleased to meet you
+    - I am pleased to meet you
+
+- intent: ask_for_help
+  examples: |
+    - help
+    - Natasha
+    - Can you help me?
+    - I need your help!
+    - I have to ask you something
+    - There is something that I need to ask you
+    - I have some stuff to ask you
+    - give me a hand
+
+- intent: find_continent
+  examples: |
+    - What is the continent of [Sweden](name)
+    - Which continent is [France](country) in?
+    - What continent does [Brazil](country) belong to?
+    - Tell me the continent of [Japan](country).
+    - In which continent is [Canada](country)?
+    - Which continent is [India](country) located in?
+    - Where is [Australia](country) on the continent map?
+    - Can you tell me the continent for [Germany](country)?
+    - What continent does [South Africa](country) lie in?
+    - [Italy](country) is in which continent?
+    - I'd like to know the continent of [Mexico](country).
+
+- intent: country_info
+  examples: |
+    -[Italy](country)
+    -[Brazil](country)
+    -[South Africa](country)
+    -[Canada](country)
+    -[China](country)
+    -[Netherlands](country)
+    -[USA](country)
+    -[Mexico](country)
+    -[United Kingdom](country)
+    -[Germany](country)
+    -[France](country)
+    -[India](country)
+    -[Turkey](country)
+    -[Greece](country)
+    -[Azerbaijan](country)
+    -[Bulgaria](country)
+    -[Russia](country)
+    -[Iran](country)
+    -[Japan](country)
+    -[South Korea](country)
+    -[Philippines](country)
+    -[Vietnam](country)
+    -[Indonesia](country)
+    -[Thailand](country)
+    -[Australia](country)
+    -[New Zealand](country)
+    -[Fiji](country)
+    -[Papua New Guinea](country)
+    -[Indonesia](country)
+    -[Singapore](country)
+    -[Argentina](country)
+    -[Chile](country)
+    -[Uruguay](country)
+    -[Paraguay](country)
+    -[Bolivia](country)
+    -[Peru](country)
+
+
+- intent: city_info
+  examples: |
+    -[Rome](city)
+    -[Sao Paulo](city)
+    -[Buenos Aires](city)
+    -[New York](city)
+    -[Würzburg](city)
+    -[Eindhoven](city)
+
+- intent : date_info
+  examples: |
+    -[1st of April](date)
+    -[15th of August](date)
+    -[7th of June](date)
+    -[2025-10-05](date)
+    -[2004-07-31](date)
+    -[1980-08-10](date)
+
+
+
+- intent: thanks
+  examples: |
+    -thank you
+    -thank you very much
+    -thanks
+    -thanks a lot
+    -great,thank you
+    -thank you for being here
+
+- intent: ask_origin
+  examples: |
+    - Where are you from?
+    - What city do you live in?
+    - Where do you come from?
+
+- intent: ask_hobbies
+  examples: |
+    - What are your hobbies?
+    - What do you like to do for fun?
+    - What do you do in your free time?
+    - What do you like doing for fun?
+
+- intent: ask_bot_purpose
+  examples: |
+    - What can you do?
+    - What are you able to do?
+    - What is your purpose?
+    - What do you do?
+    - What is your job?    
+
+- intent: ask_what_are_you_doing
+  examples: |
+    - What are you doing?
+    - Whatcha doin’?
+    - What are you up to?
+    - What are you busy with?
+    - What’s keeping you busy?
+
+- intent: best_person
+  examples: |
+    - Who is the best person in Belgium?
+
+- intent: best_turkey
+  examples: |
+    - What about in Turkey?
+
+- intent: what_am_I_doing
+  examples: |
+    - I'm studying for my exam
+    - Just scrolling through social media
+    - Watching Netflix
+    - Cooking dinner
+    - Working on a project
+    - Playing video games
+    - Taking a walk outside
+    - Listening to music
+    - Cleaning my room
+    - Exercising at the gym
+    - Having coffee with a friend
+    - Driving right now
+    - Shopping online
+    - Reading a book
+    - Just relaxing
+    - I'm at work
+    - I'm in a meeting
+    - Trying to fix my computer
+    - Learning something new
+    - Writing an email
+    - Planning my weekend
+    - Thinking about life
+    - Staring at the ceiling
+    - Multitasking like crazy
+    - Procrastinating (as usual)
+    - Nothing special
+    - Just killing time
+    - Waiting for someone
+    - Enjoying the weather
+    - Bored out of my mind
+    - Pretending to be busy
+
+- intent: sad_what_am_I_doing
+  examples: |
+    - I'm just crying in my room
+    - Lying in bed feeling awful
+    - Staring at the wall, feeling empty
+    - Drinking alone... again
+    - Crying over my ex
+    - Overthinking everything
+    - Ignoring everyone's messages
+    - Eating junk food to feel better
+    - Watching sad movies to match my mood
+    - Listening to depressing music
+    - Writing sad poems
+    - Regretting all my life choices
+    - Feeling lonely in a crowded room
+    - Hiding from the world
+    - Can't stop overanalyzing
+    - Trying not to break down
+    - Just existing, not living
+    - Wishing things were different
+    
+
+- intent: busy
+  examples: |
+    - I'm busy with some stuff that I have to do
+    - I have work to do
+    - I'm occupied right now
+    - busy now
+    - occupied with tasks
+
+
+- intent: find_the_weather_forecast
+  examples: | 
+    - How is the weather like in [London](city) on [17th of May](city)
+    - tell me the weather of [Rome](city) on [2025-06-05](date)
+    - Could you tell me the weather of [Berlin](city) on [2025-07-05](date)
+    - Can you tell me the weather of [Amsterdam](city) on [2025-10-05](date)
+    - I would like to know the weather of [Namur](city) on [3rd of June]
+    - I'd like to know the weather of [Bologna](city) on [31st of July]
+    - I want to know the weather of [Nice](city) on [20th of september]
+    
+
+

@@ -1,0 +1,118 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_feel_better
+
+
+- story: What are you doing part (normal)
+  steps:
+  - intent: ask_what_are_you_doing
+  - action: utter_what_are_you_doing
+  - action: utter_what_about_you
+  - intent: what_am_I_doing
+  - action: utter_have_fun
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: What are you doing part (sad1)
+  steps:
+  - intent: ask_what_are_you_doing
+  - action: utter_what_are_you_doing
+  - action: utter_what_about_you
+  - intent: sad_what_am_I_doing
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: What are you doing part (sad2)
+  steps:
+  - intent: ask_what_are_you_doing
+  - action: utter_what_are_you_doing
+  - action: utter_what_about_you
+  - intent: sad_what_am_I_doing
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_feel_better
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: user asks for continent with country info
+  steps:
+  - intent: find_continent
+  - action: utter_ask_country_info
+  - intent: country_info
+    entities:
+      - country: Germany
+  - action: utter_finding_continent
+  - action: action_find_continent
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: user asks for the weather
+  steps:
+  - intent: find_the_weather_forecast
+  - action: utter_ask_city
+  - intent: city_info
+    entities:
+      - city: Brugge
+  - action: utter_ask_date
+  - intent: date_info
+    entities:
+      - date: 7th of May
+      - date: 2025-03-03
+  - action: utter_finding_weather
+  - action: action_find_weather
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: talking about who is users and saving it
+  steps:
+  - intent: bot_who_are_you
+  - action: utter_i_am_a_bot
+  - action: utter_what_is_your_name
+  - intent: who_am_I
+    entities:
+      - name: Tolga
+  - action: utter_comment_name
+  - action: action_save_name
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: praising himself
+  steps:
+  - intent: best_person
+  - action: utter_best_person
+  - intent: best_turkey
+  - action: utter_best_turkey
